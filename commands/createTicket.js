@@ -12,7 +12,7 @@ let em = new Discord.RichEmbed()
 let emb = new Discord.RichEmbed()
 .setTitle("Hello! Our staff will be with you shortly!")
 .setDescription("If this is a order feel free to ping Negative or Geek Squad :D")
-.addField("The reason for this ticket is: ${tr}")
+.addField("The reason for this ticket is: ", tr)
 .setColor("GREEN")
 .setFooter(`Requested by: ${message.author.username}`)
 
