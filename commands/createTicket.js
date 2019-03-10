@@ -21,8 +21,9 @@ let em = new Discord.RichEmbed()
                 SEND_MESSAGES: true,
                 READ_MESSAGES: true
             });
-            message.channel.send(`:white_check_mark: Your ticket has been created, #${c.name}.`);
+ });
 bot.message.channel.send({embed: em})
+  
 }
 module.exports.help = {
 "name": "new"
