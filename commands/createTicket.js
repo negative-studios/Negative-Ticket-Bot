@@ -33,7 +33,7 @@ let emb = new Discord.RichEmbed()
             });
  });
 message.channel.send({embed: em})
-message.guild.channels.get("name", `ticket-${num}`).send({embed:emb})
+message.guild.channels.find(`ticket-${num}`).send({embed:emb})
 }
 module.exports.help = {
 "name": "new"
