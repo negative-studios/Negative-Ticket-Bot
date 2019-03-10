@@ -7,7 +7,7 @@ let em = new Discord.RichEmbed()
 .addField("Your ticket number is:", num)
 
  message.guild.createChannel(`ticket-${num}`, "text").then(c => {
-            let role = message.guild.roles.find("name", "Support Staff");
+            let role = message.guild.roles.find("name", "Ticket Access");
             let role2 = message.guild.roles.find("name", "@everyone");
             c.overwritePermissions(role, {
                 SEND_MESSAGES: true,
