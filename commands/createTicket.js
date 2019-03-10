@@ -22,7 +22,7 @@ let em = new Discord.RichEmbed()
                 READ_MESSAGES: true
             });
  });
-bot.message.channel.send({embed: em})
+message.channel.send({embed: em})
   
 }
 module.exports.help = {
